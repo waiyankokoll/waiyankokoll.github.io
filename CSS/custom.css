@@ -2,6 +2,8 @@
 *{
     /* color: red; */
     font-size: 20px;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Tag Selector / Element Selector */
@@ -55,4 +57,38 @@ a:visited{
 :target{
     color: red;
     border: 2px solid rgb(0, 0, 0);
+}
+.border1 {
+    border: 10px double red;
+}
+
+.border2 {
+    border-left: 10px solid blue;
+}
+.brodersizeone{
+    border-style: solid;
+    border-width: 1px 5px 10px 15px;
+}
+.broderstyle{
+    border-style: solid dashed double dotted;
+    border-color: red green;
+}
+.margin{
+    border: 1px solid black;
+    margin: 50px 20px;
+}
+.padding{
+    border: 1px solid red;
+    padding: 100px 10px 50px 20px;
+}
+.inline {
+    display: inline-block;
+    width: 300px;
+    border: 2px solid red;
+    text-decoration: none;
+}
+.block {
+    border: 2px solid black;
+    width: 300px;
+    display: inline-block;
 }
