@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+
+.navber {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.navber-container{
+    display: grid;
+}
+.navber h1 {
+    padding-left: 100px;
+}
+.navber-container ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: end;
+    gap: 10px;
+    padding-right: 100px;
+}
+.navber-container ul li {
+    padding: 10px;
+    align-items: center;
+    list-style-type: none;
+
+}
+.navber-container ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+#header:target{
+    color: #14efdc;
+}
+/* .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 100px;
+    justify-content: center;
+
+    gap: 100px;
+} */
+.header {
+    display: flex;
+    /* justify-content: space-around; */
+}  
+.images {
+    display: grid;
+    margin-left: 30%;
+    /* justify-content: left;
+    margin-top: 0px; */
+    /* border: 3px solid #28f6e9; */
+    /* margin-right: 150px; */
+    /* margin-bottom: 100px; */
+    width: 135%;
+}
+.name{
+    font-size: 50px;
+}
+.name2 {
+    font-size: 30px;
+}
+.name-color{
+    color:#14efdc;
+}
+/* .fa-brands {
+    font-size: 30px;
+    margin: 5px;
+    transition: all 0.5s ease;
+} */
+/* .fa-brands:hover{ */
+    /* font-size: 40px; */
+/* } */
+.header a {
+    display:inline-block;
+}
+.text-head {
+    margin-top: 175px;
+    margin-left: 7.3%;
+}
+.hero-sec{
+    position: absolute;
+    top: 440px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+    color: #14efdc;
+    border: 2px solid white;
+    transition: all 0.5s ease;
+}
+.hero-sec:hover{
+    font-size: 17px;
+    transform: translateY(-0.5px);
+    background-color: #14efdc;
+    border: 2px solid #14efdc;
+    color: black;
+}
+.hero-sec-button2{
+    position: absolute;
+    left: 260px;
+}
+.fa-telegram{
+    position: absolute;
+    top: 380px;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+.fa-github{
+    position: absolute;
+    top: 380px;
+    left: 150px;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+.fa-instagram{
+    position: absolute;
+    top: 380px;
+    left: 190px;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+.fa-whatsapp{
+    position: absolute;
+    top: 380px;
+    left: 230px;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+.fa-telegram:hover,.fa-github:hover,.fa-instagram:hover,.fa-whatsapp:hover {
+    font-size: 33px;
+    transform: translateY(-5px);
+    color: #14efdc;
+}

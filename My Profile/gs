@@ -1,0 +1,28 @@
+            <a href=""><img src="images/telegram-removebg-preview.png" alt="" class="social-logo"></a>
+            <a href=""><img src="images/instergram-removebg-preview.png" alt="" class="social-logo inst"></a>
+            <a href=""><img src="images/github-removebg-preview.png" alt="" class="social-logo"></a>
+            <a href=""><img src="images/whatsapp-removebg-preview.png" alt="" class="social-logo"></a>
+
+
+
+
+
+            .hero-sec-button1{
+                text-decoration: none;
+                /* margin: 5px; */
+                /* margin-top: 13px; */
+                padding: 10px;
+                border-radius: 50px;
+                border: 2px solid #14efdc;
+            
+            }
+            .hero-sec-button2{
+                text-decoration: none;
+                /* margin: 5px; */
+                /* margin-top: 13px; */
+                padding: 10px;
+                border-radius: 50px;
+                border: 2px solid #14efdc;
+            
+            }
+            
