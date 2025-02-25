@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String lesson</h1>
+
+
+    <script>
+        let firstname = "Developer";
+        let lastname = "Wai Yan Ko Ko";
+        console.log(firstname,lastname);
+        console.log(lastname.length);
+
+        let fullname = firstname +' ' + lastname;
+        console.log(fullname);
+
+        console.log("My name is " + fullname);
+        document.write( fullname + '<br>');
+        document.write(firstname + '<b>' + lastname + '</b><br>');
+        document.write(`${firstname} <b> ${lastname} </b><br>`);
+        document.write(`My name is ${fullname}. I am 16 years old . <br>`);
+
+        document.write(firstname.toUpperCase()+ '<br>');
+        document.write(firstname.toLowerCase() + '<br>');
+
+
+        document.write(fullname.substr(14,3)+'<br>');
+        
+        
+        let myjob= "             senior           Developer";
+        document.write(myjob.trim()+'<br>');
+
+        let ser = "Javascript is funny";
+        document.write(ser.search('is')+'<br>');
+
+        let rep = "I Want to visit Mandalay";
+        document.write(rep.replace('Mandalay','Yangon')+"<br>");
+
+
+        document.write('I\'m Wai Yan Ko Ko');
+        document.write("I'm Wai Yan Ko Ko.my height is 5.2\"");
+        document.write(`I'm Wai Yan Ko Ko.my height is 5.2"`);
+
+
+
+        
+        
+    </script>
+</body>
+</html>

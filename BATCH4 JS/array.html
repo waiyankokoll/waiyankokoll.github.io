@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array lesson</h1>
+
+
+    <script>
+        let arr = [1,2,3];
+        console.log(arr[1]);
+        console.log(arr.length);//number of array length
+
+
+        let fruits = ['apple','orange','mango','strawberry'];
+        console.log(fruits.length);
+        console.log(fruits);
+
+        fruits.push('banana');//နောက်ဆုံးကနေ data ထည့်ချင်ရင်ထည့်ချင်ရင်
+        console.log(fruits);
+
+        fruits.pop();//နောက်ဆုံးကနေ data ဖျက်ချင်ရင်
+        console.log(fruits);
+
+        fruits.unshift('cherry');//ရှေ့ဆုံးကနေ data ထည့်ချင်ရင်ထည့်ချင်ရင်
+        console.log(fruits);
+        fruits.unshift('blueberry');//ရှေ့ဆုံးကနေ data ထည့်ချင်ရင်ထည့်ချင်ရင်
+        console.log(fruits);
+
+        fruits.shift();//ရှေ့ဆုံးကနေ data ဖျက်ချင်ရင်
+        console.log(fruits);
+        
+        let students = ["Mg Mg","Aung Aung","Aye Aye","Hla Hla","Tun Tun"];
+        console.log(students);
+
+        students.sort();
+        console.log(students);
+
+        students.reverse();
+        console.log(students);
+
+        students.sort().reverse();
+        console.log(students);
+
+        let studentsStr = students.toString();
+        console.log(studentsStr);
+
+        let name = "Hla Hla , Mya Mya , Aung Aung , Tun Tun , Aye Aye";
+
+        let namelistarray = name.split(',');
+        console.log(namelistarray);
+
+        let arr1 = [1,2,3,4];
+        let arr2 = [5,6,7];
+        let arr4 = [8,9,10];
+        console.log(arr1);
+        console.log(arr2);
+        
+        
+        let arr3 = arr1.concat(arr2);
+        console.log(arr3);
+
+        let arr5 = [...arr1,...arr2,...arr4];
+        console.log(arr5);
+        
+        
+
+    </script>
+</body>
+</html>
