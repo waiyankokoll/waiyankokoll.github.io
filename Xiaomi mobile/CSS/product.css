@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navber {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin-left:10px; */
+    align-items: center;
+}
+.logoandname {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px 0 27px;
+}
+.logo-name {
+    letter-spacing: 1px;
+    margin-left: 0px;
+}
+.nav-menu ul{
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 20px 0 15px;
+}
+.nav-menu ul li {
+    margin: 7px;
+    list-style-type: none;
+}
+.nav-menu ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 15px 24.5px 15px;
+    color: black;
+}
+/* navber Hover */
+.nav-menu ul li a:hover {
+    color: #ff6900;
+    /* background-color: #ff6900; */
+    /* border-radius: 5px; */
+    border-bottom: 3px solid #ff6900;
+}
+.hero-text {
+    font-size: 50px;
+    margin:0 30px  0 0px;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
