@@ -49,10 +49,335 @@
 }
 .hero-text {
     font-size: 50px;
-    margin:0 30px  0 0px;
+    margin:0 0px  0 0px;
     font-weight: bold;
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color:#f5f5f5;
+    padding: 40px 0 40px 0;
+}
+.product-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    margin: 0 220px 0 220px;
+    border-radius:10px ;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 7px 0 3px 0;
+    
+}
+.search {
+    margin: 10px 0 10px 0;
+    width: 300px ;
+    height: 37px;
+    padding:0 0 0 10px ;
+    border-radius: 7px;
+    background-color: #f5f5f5;
+}
+.search-btn {
+    margin: 10px 10px;
+    border-radius: 7px;
+    padding: 7px 10px ;
+    background-color: #f5f5f5;
 
+}
+.search-btn:hover {
+    background-color: #ff6900;
+}
+.all-product,.xiaomi-series,.redmi-series,.Tablets-serices,.laptop-serices,.smart-watch-serices,.earphone-serices,.accessoties-serices {
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 10px 20px 10px;
+    font-size: 18px;
+    color: black;
+    background-color: #f5f5f5;
+}
+.all-product:hover,.redmi-series:hover,.Tablets-serices:hover,.laptop-serices:hover,.smart-watch-serices:hover,.earphone-serices:hover,.accessoties-serices:hover {
+    color: white;
+    background-color: #ff6900;
+    border-radius: 7px;
+
+}
+.all-product{
+    color: white;
+    background-color: #ff6900;
+    border-radius: 7px;
+}
+.product-title {
+    font-size: 50px;
+    margin: 80px 0 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 70px 20px 70px;
+}
+.product1 {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 70px 20px 70px;
+    
+}
+.product2 {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 70px 20px 70px;
+    
+}
+.product3{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 70px 20px 70px;
+    
+}
+.product4{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px 70px 10px 70px;
+    
+}
+.product-container{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 490px;
+}
+.product-name{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 0px 0 10px 0;
+}
+.product-img {
+    width: 100%;
+    transition: all 0.4s ease;
+}
+.item-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 28px 0 28px;
+}
+.price {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn {
+    margin: 20px 20px 20px 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease-out;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+    
+.product-container a {
+    text-decoration: none;
+}
+.fa-cart-shopping {
+    padding: 10.7px 30px 10.7px 30px;
+
+}
+.product-img:hover{
+    transform: scale(1.07);
+}
+.accessoties{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 50px 70px 10px 70px;
+}
+.accessoties-container{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 400px;
+}
+.accessoties-container1{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 620px;
+}
+.accessoties-container2{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 620px;
+}
+.accessoties-name{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 15px 0px 15px;
+}
+.accessoties-img {
+    width: 100%;
+    
+    transition: all 0.4s ease;
+
+}
+.accessoties-img:hover{
+    transform: scale(1.1);
+}
+.accessoties-info {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.btn-Learmmore {
+    margin: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    justify-content: center;
+}
+.btn-Learmmore1 {
+    margin: 20px;
+    background-color: black;
+    color: white;
+    padding: 7px 15px 7px 15px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    justify-content: center;
+}
+.btn-Learmmore2 {
+    margin: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    justify-content: center;
+}
+.accessoties-info {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.accessoties-info1 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 31px;
+}
+.accessoties-name {
+    /* font-size: 1.5em; */
+    margin: 20px 0 0px 0;
+}
+.img {
+    width: 100%;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1e272e;
+    margin: 70px 0 0 0;
+}
+
+.let1 {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 70px 50px 70px;
+    color: white;
+}
+.let2 {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 290px 50px 90px;
+    color: white;
+}
+.let1 h2 ,.let2 h2{
+    margin: 0 0 24px 0;
+}
+.let2 p a {
+    display: block;
+    text-decoration: none;
+    line-height: 25px;
+    color: white;
+    font-size: 1.2em;
+    margin: 0 0 0 7px;
+    transition: all 0.4s ease;
+}
+.let2 p a:hover{
+    transform:translateX(5px);
+}
+.fa-chevron-right {
+    font-size: 13px;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+.right {
+    margin: 50px 50px 0 80px;
+    color: white;
+}
+/* .let1 p, .let2 p{
+    margin-top: -70px;
+} */
+.fa-telegram,.fa-instagram,.fa-youtube,.fa-facebook,.fa-x-twitter{
+    margin: 24px 5px 35px 5px;
+    font-size: 28px;
+    color: white;
+}
+.footer-email {
+    margin: 0 0 10px 0;
+    
+}
+
+.footer-line {
+    border: 0.2px solid white;
+    margin: 0 70px 0 70px;
+
+}
+.footer-end {
+    margin: 15px 0 0px 0;
+    padding-bottom:10px ;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.footer-end a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px 0 5px;
+}
+.footer-container {
+    background-color: #1e272e;
+}
+@font-face {
+    font-family: font1;
+    src: url(../font/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+.font {
+    font-family: font1;
 }

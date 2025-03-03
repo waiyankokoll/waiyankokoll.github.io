@@ -59,7 +59,10 @@
     
     justify-content: start;
 }
+.hero-arr {
+    margin: 5px 10px 5px 10px;
 
+}
 .hero-section-img {
     display: grid;
     justify-content: end;
@@ -192,8 +195,9 @@
 .accessoties-container{
     background-color: #f5f5f5;
     border-radius: 10px;
-    height: 430px;
+    height: 400px;
 }
+
 .accessoties-name{
     display: grid;
     justify-content: center;
@@ -201,6 +205,22 @@
     font-weight: bold;
     font-size: 20px;
     margin: 0px 15px 0px 15px;
+}
+.accessoties-name {
+    /* font-size: 1.5em; */
+    margin: 20px 0 0px 0;
+}
+.accessoties-name1{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 15px 0px 15px;
+}
+.accessoties-name1 {
+    /* font-size: 1.5em; */
+    margin: 23px 0 0px 0;
 }
 .accessoties-img {
     width: 100%;
@@ -215,7 +235,23 @@
     margin: 20px;
     background-color: black;
     color: white;
-    padding: 10px 15px 10px 15px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    justify-content: center;
+}
+.btn-Learmmore2 {
+    display: grid;
+    justify-content: center;
+    padding: 5px 60px 5px 60px;
+}
+.btn-Learmmore9 {
+    margin: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px 15px 5px 15px;
     border-radius: 7px;
     text-align: center;
     text-decoration: none;
@@ -224,12 +260,12 @@
 }
 .accessoties-info {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 10px;
 }
 .accessoties-info1 {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 31px;
 }
 /* .carousel {
@@ -326,7 +362,17 @@
     position: relative;
     top: 50px;
 }
-
+.btn-Learm-more10 {
+    margin: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+}
 .img {
     width: 100%;
     transition: all 0.4s ease;
@@ -467,3 +513,11 @@
 .footer-container {
     background-color: #1e272e;
 }
+@font-face {
+    font-family: font2;
+    src: url(../font/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+.font {
+    font-family: font2;
+}
+
