@@ -8,19 +8,64 @@
 <body>
     <h1>Property and Method</h1>
     <h2 id="creattextnote"></h2>
-    <button onclick="creattext()">creat text note</button>
+    <p id="setAtt">this is Set attribute</p>
+    <p id="removeatt" style="color: red;">Remove attribute</p>
+    <p id="getAtt" style="color: teal; font-style: italic;">this is Set attribute</p>
+    <button onclick="creatText()">create text note</button>
+    <button onclick="createElementnodelesson()">createElementnode</button>
+    <button onclick="createsetatt()">createElementnode</button>
+    <button onclick="creategetatt()">createElementnode</button>
+    <button onclick="Changecolor()">change Color</button>
 
     
     
     <script>
-        function creattext() {
+        function creatText() {
            // alert("hello");
-           let creattextnote = document.getElementById('creattextnote');
+           let createTextNode = document.getElementById('creattextnote');
            //creattextnote.innerText = "creattextnote";
-           let result = document.createTextNode('Creat text node');
-           creattextnote.appendChild(creattext)
+           let creatText = document.createTextNode('Creat text node');
+           createTextNode.appendChild(creatText);
            
         }
+
+
+        function createElementnodelesson(){
+            let h3 = document.createElement('h3');
+            //console.log(h3);
+            
+            h3.innerText = "This is create element";
+            //console.log(h3);
+            document.body.appendChild(h3);
+        }
+
+        function createsetatt() {
+            let setAttelement = document.getElementById('setAtt');
+            setAttelement.setAttribute('style','color:red;')
+        }
+        function creategetatt(){
+            let getelement = document.getElementById('getAtt');
+            console.log(getelement.getAttribute('style'));
+            
+        }
+
+        function Changecolor() {
+            let removetg = document.getElementById ('removeatt');
+            let colorname = removetg.getAttribute('style');
+            console.log(colorname);
+
+
+            if (colorname == 'color:red'){
+                removetg.removeAttribute('style');
+                removetg.setAttribute('style','color:green');
+            }else{
+                removetg.removeAttribute('style');
+                removetg.setAttribute('style','color:red');
+            }
+            
+        }
+
+
     </script>
 </body>
 </html>
