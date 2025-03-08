@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body{
+            display: flex;
+            font-weight: bold;
+            font-size: 30px;
+            justify-content: center;
+            text-align: center;
+            color: #09fd51;
+            background-color: #4b4b4b;
+        }
+        .day{
+            margin: 0 0 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Clock</h1>
+        <p>
+            <span  id="date"></span>/
+            <span id="month"></span>/
+            <span id="year"></span>
+
+            <span id="day" class="day" style="color: white;"></span>
+        </p>
+        <span id="hour"></span>:
+        <span id="Minutes"></span>:
+        <span id="second"></span> 
+        <span id="AmPm" class="day"  style="color: white;"></span>
+    </div>
+    <script>
+        let date = new Date();
+        let Date1 = date.getDate();
+        let Month = date.getMonth()+1;
+        let year = date.getFullYear();
+
+        // let today = date.getDate();
+
+        document.getElementById('date').innerHTML = Date1;
+        document.getElementById('month').innerHTML = Month;
+        document.getElementById('year').innerHTML = year;
+
+
+
+
+        setInterval(clock,1000)
+        
+        function clock(){
+            let now = new Date();
+            let Hour = String(now.getHours()).padStart(2,'0');
+            let Minutes = String(now.getMinutes()).padStart(2,'0');
+            let second = String( now.getSeconds()).padStart(2,'0');
+            let days = ["Sun","Mon","Tue","Wed","Thur","Fri","Sat",];
+            
+            document.getElementById('hour').innerHTML = Hour;
+            document.getElementById('Minutes').innerHTML = Minutes;
+            document.getElementById('second').innerHTML = second;
+            let dayss = document.getElementById('day');
+            dayss.innerHTML = days[date.getDay()];
+
+
+            let am = ('AM');
+            let pm = ('PM');
+
+            if (Hour < 12) {
+                document.getElementById('AmPm').innerHTML = am
+
+            }else{
+                document.getElementById('AmPm').innerHTML = pm
+            }
+        }
+    </script>
+
+</body>
+</html>

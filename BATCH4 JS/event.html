@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Lesson</h1>
+    <img src="pngtree-laptop-icon-png-image_1871608.jpg" alt="" id="myimg" width="300" height="300" onmouseenter="big()" onmouseout="normal()" onclick="sobig()">
+
+
+    <input type="text" name="" id="myinp" onchange="showdata()">
+    <p id="result"></p>
+    <script>
+
+        //onmouseenter
+        //onmouseover
+
+
+        //onmouseout
+        //onmouseleave
+        //onclick
+
+        //onkeyup
+        //onkeydown
+        //onchange
+        function big() {
+            document.getElementById('myimg').style.width = "500px";
+            document.getElementById('myimg').style.height = "500px";
+        }
+        function normal(){
+            document.getElementById('myimg').style.width = "300px";
+            document.getElementById('myimg').style.height = "300px";
+        }
+
+        function sobig(){
+            document.getElementById('myimg').style.width = "800px";
+            document.getElementById('myimg').style.height = "800px";
+        }
+
+
+        function showdata() {
+
+        
+            let myinput = document.getElementById('myinp').value;
+            document.getElementById('result').innerText = myinput;
+        }
+        
+    </script>
+</body>
+</html>
