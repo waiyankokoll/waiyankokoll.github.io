@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vlidation</title>
+</head>
+<body>
+    <h1>Form Vlidation</h1>
+
+    <form action="register.php" method="get" onsubmit="return checkvalue()">
+        <label for="name">Name</label><br>
+        <input type="text" name="" id="name"><p id="nameerrormessage"></p>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="" id="email"><p id="emailerrormessage"></p>
+
+        <label for="password">Password</label><br>
+        <input type="password" name="" id="password"><p id="passworderrormessage"></p>
+
+        <label for="confirm_password">Confirm Password</label><br>
+        <input type="password" name="" id="confirm_password"><p id="confirm_passworderrormessage"></p>
+
+        <input type="submit" name="" id="" value="Register" >
+    </form>
+
+    <script>
+        function checkvalue(){
+            //alert('ok')
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let confirm_password = document.getElementById('confirm_password').value;
+            // console.log(name,email,password,confirm_password);
+            if (name != "" && email != "" && password != "" && confirm_password != "" && password == confirm_password){
+                return true;
+            }else{
+                var nameerror = document.getElementById('name');
+                var nameerrormessage = document.getElementById('nameerrormessage');
+                var emailerror = document.getElementById('email');
+                var emailerrormessage = document.getElementById('emailerrormessage');
+                var passworderror = document.getElementById('password');
+                var passworderrormessage = document.getElementById('passworderrormessage');
+                var confirm_passworderror = document.getElementById('confirm_password');
+                var confirm_passworderrormessage = document.getElementById('confirm_passworderrormessage');
+
+                if (name == ""){
+                    
+                    nameerror.style.border = "1px solid red";
+                    nameerrormessage.innerText = "Name is required!";
+                    nameerrormessage.style.color = 'red';
+                }
+                if (name != ""){
+                    nameerror.style.border = "1px solid black";
+                    nameerrormessage.innerText = "";
+                }
+                if (email == ""){
+                    emailerror.style.border = "1px solid red";
+                    emailerrormessage.innerText = "Email is required!";
+                    emailerrormessage.style.color = 'red';
+                }
+                if (email != ""){
+                    emailerror.style.border = "1px solid black";
+                    emailerrormessage.innerText = "";
+                }
+                if (password == ""){
+                    passworderror.style.border = "1px solid red";
+                    passworderrormessage.innerText = "Password is required!";
+                    passworderrormessage.style.color = 'red';
+                }
+                if (password != ""){
+                    passworderror.style.border = "1px solid black";
+                    passworderrormessage.innerText = "";
+                }
+                if (confirm_password == ""){
+                    confirm_passworderror.style.border = "1px solid red";
+                    confirm_passworderrormessage.innerText = "Password is required!";
+                    confirm_passworderrormessage.style.color = 'red';
+                }
+                if (confirm_password != ""){
+                    confirm_passworderror.style.border = "1px solid black";
+                    confirm_passworderrormessage.innerText = "";
+                }
+                if (password != confirm_password){
+                    confirm_passworderror.style.border = "1px solid red";
+                    confirm_passworderrormessage.style.color = 'red';
+                    confirm_passworderrormessage.innerText = "The password field confirmation does not match.";
+                }else{
+                    confirm_passworderror.style.border = "1px solid black";
+                    confirm_passworderrormessage.innerText = "";
+                }
+            }
+            return false;
+            
+        }
+    </script>
+</body>
+</html>

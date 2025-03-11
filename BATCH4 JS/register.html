@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student register</title>
+</head>
+<body>
+    <h1>Student Register</h1>
+    <form action="" method="get" name="myform">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name"><br><br>
+                
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age"><br><br>
+
+
+        <label for="address">Address</label><br>
+        <textarea name="address" id="address"></textarea><br><br>
+
+        <button type="button" onclick="showdata()">Register</button>
+    </form>
+    <h1>Student lists</h1>
+    <table border="1" cellspacing="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody id="mybody">
+
+        </tbody>
+    </table>
+    <script>
+        var studentlists = [];
+        function showdata(){
+            //let name = document.getElementById('name').value
+            let name = document.myform.name.value;
+            let age = document.myform.age.value;
+            let address = document.myform.address.value;
+            // console.log(name,age,address);
+
+            //create object
+            let student = {
+                student_name : name ,
+                student_age : age,
+                student_address : address,
+
+            }
+            //array push
+            studentlists.push(student);
+
+            //show data
+            var html = '';
+            for (let i =0 ; i < studentlists.length; i++){
+                html += `
+                    <tr>
+                        <td>${i + 1}</td>    
+                        <td>${studentlists[i].student_name}</td>    
+                        <td>${studentlists[i].student_age}</td>    
+                        <td>${studentlists[i].student_address}</td>    
+                    </tr>
+                `;
+
+            }
+
+
+
+            document.getElementById('mybody').innerHTML = html;
+
+            
+        }
+    </script>
+</body>
+</html>
