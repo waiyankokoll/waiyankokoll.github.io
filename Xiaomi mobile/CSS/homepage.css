@@ -315,7 +315,7 @@
 
 .product-title2 {
     font-size: 3em;
-    color: white;
+    color: #ff6900;
 }
 .photography-kit {
     display: grid;
@@ -399,7 +399,7 @@
 .about-text {
     margin: 30px 80px 50px 80px;
     font-size: 1.3em;
-    color: #ff6900;
+    color: white;
 
 }
 .contact-form {

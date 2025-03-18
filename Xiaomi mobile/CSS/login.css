@@ -121,7 +121,7 @@
 .img {
     display: grid;
     justify-content: center;
-    width: 90%;
+    width: 80%;
     margin: -25px 0 0 50px;
 }
 .footer {
