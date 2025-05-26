@@ -29,13 +29,41 @@
           <li class="nav-item"><a href="Product.html" class="nav-link me-3 fw-bold">Product</a></li>
           <li class="nav-item"><a href="About.html" class="nav-link me-3 fw-bold">About</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link me-3 fw-bold">Contact</a></li>
-          <li class="nav-item"><a href="" class="nav-link me-3 fw-bold"><i class="fa-solid fa-user"></i></a></li>
-          <li class="nav-item"><a href="" class="nav-link me-3 fw-bold"><i class="fa-solid fa-cart-shopping"></i></a>
+          <li class="nav-item"><a href="login.html" class="nav-link me-3 fw-bold"><i class="fa-solid fa-user"></i></a>
           </li>
+          <li class="nav-item"><i class="fa-solid fa-cart-shopping nav-link me-3 fw-bold mt-1"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
+                id="item-count" class="ms-1">()</span></i>
+          </li>
+          
         </ul>
       </div>
     </div>
   </nav>
+  <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header bg-white">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
+      <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <table border="1" cellpadding="25" cellspacing="0">
+        <thead>
+          <tr>
+
+          </tr>
+        </thead>
+        
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+    <div class="offcanvas-footer">
+
+    </div>
+
+  </div>
   <header style="background-color: #393E46;" class="container-fluid ">
     <h1 class="header-text text-center text-white fw-bold font">Product</h1>
   </header>
@@ -116,7 +144,8 @@
                   <h3 class="mb-3">Yamaha YZF-R</h3>
                   <span class="text-decoration-line-through">$500,000.00</span>
                   <span style="color: blue;">$450,000.00</span>
-                  <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4"></i></span>
+                  <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4 addtocart"
+                      data-id="1" data-name="laptop 1" data-price="1500000"></i></span>
 
                 </div>
               </div>
@@ -219,12 +248,16 @@
       <div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-4">
         <h3 class="text-center text-white">Quick Link</h3>
         <div class="quick-link-container">
-          <p class="text-white "><i class="fa-solid fa-angles-right"></i><a href="../index.html" class="quick-link ms-2">Home</a></p>
-          <p class="text-white "><i class="fa-solid fa-angles-right"></i><a href="Product.html" class="quick-link ms-2">Product</a>
+          <p class="text-white "><i class="fa-solid fa-angles-right"></i><a href="../index.html"
+              class="quick-link ms-2">Home</a></p>
+          <p class="text-white "><i class="fa-solid fa-angles-right"></i><a href="Product.html"
+              class="quick-link ms-2">Product</a>
           </p>
-          <p class="text-white "><i class="fa-solid fa-angles-right"></i><a href="About.html" class="quick-link ms-2">About</a>
+          <p class="text-white "><i class="fa-solid fa-angles-right"></i><a href="About.html"
+              class="quick-link ms-2">About</a>
           </p>
-          <p class="text-white "><i class="fa-solid fa-angles-right"></i><a href="contact.html" class="quick-link ms-2">Contact</a>
+          <p class="text-white "><i class="fa-solid fa-angles-right"></i><a href="contact.html"
+              class="quick-link ms-2">Contact</a>
           </p>
         </div>
 
@@ -255,12 +288,15 @@
     </div>
     <div class="">
       <div class="footer-line"></div>
-      <p class="text-white text-center mb-0 py-3">&copy; Copyright <a href="../index.html" class="footer-a-tag">Rideaxis</a> ;
+      <p class="text-white text-center mb-0 py-3">&copy; Copyright <a href="../index.html"
+          class="footer-a-tag">Rideaxis</a> ;
         Design By <a href="" target="_blank" class="footer-a-tag">Wai Yan Ko Ko</a></p>
 
     </div>
   </footer>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/product.js"></script>
   <script src="aos.js"></script>
 </body>
 

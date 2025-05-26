@@ -30,14 +30,41 @@
                     <li class="nav-item"><a href="Product.html" class="nav-link me-3 fw-bold">Product</a></li>
                     <li class="nav-item"><a href="About.html" class="nav-link me-3 fw-bold">About</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link me-3 fw-bold">Contact</a></li>
-                    <li class="nav-item"><a href="" class="nav-link me-3 fw-bold"><i class="fa-solid fa-user"></i></a>
+                    <li class="nav-item"><a href="login.html" class="nav-link me-3 fw-bold"><i
+                                class="fa-solid fa-user"></i></a>
                     </li>
-                    <li class="nav-item"><a href="" class="nav-link me-3 fw-bold"><i
-                                class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="nav-item"><i class="fa-solid fa-cart-shopping nav-link me-3 fw-bold mt-1"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                            aria-controls="offcanvasScrolling"><span id="item-count" class="ms-1">()</span></i>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header bg-white">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
+      <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <table border="1" cellpadding="25" cellspacing="0">
+        <thead>
+          <tr>
+
+          </tr>
+        </thead>
+        
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="offcanvas-footer">
+
+    </div>
+
+  </div>
     <header style="background-color: #393E46;" class="container-fluid ">
         <h1 class="header-text text-center text-white fw-bold font">About</h1>
     </header>
@@ -123,115 +150,119 @@
                     <h4 class="text-white customer-review-title">Customers Review</h4>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-8 col-lg-6 mb-3">
-                        <div class="card" style="background-color: #393E46;">
-                            <div class="container">
-                                <div class="mt-2">
-                                    <i class="fa-solid fa-user text-white"></i>
-                                    <small class="text-grey" style="color: grey;">Vardaan</small>
-                                </div>
-                                <hr style="color: black;">
-                                <p class="mt-2 text-center text-white">High-quality motorcycles at reasonable prices,
-                                    plus excellent
-                                    customer service. Definitely planning to come back for my next purchase!</p>
-                                <p class="text-center">
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                            <div class="card" style="background-color: #393E46;">
+                                <div class="container">
+                                    <div class="mt-2">
+                                        <i class="fa-solid fa-user text-white"></i>
+                                        <small class="text-grey" style="color: grey;">Vardaan</small>
+                                    </div>
+                                    <hr style="color: black;">
+                                    <p class="mt-2 text-center text-white">High-quality motorcycles at reasonable
+                                        prices,
+                                        plus excellent
+                                        customer service. Definitely planning to come back for my next purchase!</p>
+                                    <p class="text-center">
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 mb-3">
-                        <div class="card" style="background-color: #393E46;">
-                            <div class="container">
-                                <div class="mt-2">
-                                    <i class="fa-solid fa-user text-white"></i>
-                                    <small class="text-grey" style="color: grey;">Vardaan</small>
-                                </div>
-                                <hr style="color: black;">
-                                <p class="mt-2 text-center text-white">High-quality motorcycles at reasonable prices,
-                                    plus excellent
-                                    customer service. Definitely planning to come back for my next purchase!</p>
-                                <p class="text-center">
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star-empty"></i>
+                        <div class="col-12 col-sm-6 col-md-8 col-lg-6 mb-3">
+                            <div class="card" style="background-color: #393E46;">
+                                <div class="container">
+                                    <div class="mt-2">
+                                        <i class="fa-solid fa-user text-white"></i>
+                                        <small class="text-grey" style="color: grey;">Vardaan</small>
+                                    </div>
+                                    <hr style="color: black;">
+                                    <p class="mt-2 text-center text-white">High-quality motorcycles at reasonable
+                                        prices,
+                                        plus excellent
+                                        customer service. Definitely planning to come back for my next purchase!</p>
+                                    <p class="text-center">
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star-empty"></i>
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 mb-3">
-                        <div class="card" style="background-color: #393E46;">
-                            <div class="container">
-                                <div class="mt-2">
-                                    <i class="fa-solid fa-user text-white"></i>
-                                    <small class="text-grey" style="color: grey;">Vardaan</small>
-                                </div>
-                                <hr style="color: black;">
-                                <p class="mt-2 text-center text-white">High-quality motorcycles at reasonable prices,
-                                    plus excellent
-                                    customer service. Definitely planning to come back for my next purchase!</p>
-                                <p class="text-center">
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star-empty"></i>
+                        <div class="col-12 col-sm-6 col-md-8 col-lg-6 mb-3">
+                            <div class="card" style="background-color: #393E46;">
+                                <div class="container">
+                                    <div class="mt-2">
+                                        <i class="fa-solid fa-user text-white"></i>
+                                        <small class="text-grey" style="color: grey;">Vardaan</small>
+                                    </div>
+                                    <hr style="color: black;">
+                                    <p class="mt-2 text-center text-white">High-quality motorcycles at reasonable
+                                        prices,
+                                        plus excellent
+                                        customer service. Definitely planning to come back for my next purchase!</p>
+                                    <p class="text-center">
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star-empty"></i>
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 mb-3">
-                        <div class="card" style="background-color: #393E46;">
-                            <div class="container">
-                                <div class="mt-2">
-                                    <i class="fa-solid fa-user text-white"></i>
-                                    <small class="text-grey" style="color: grey;">Vardaan</small>
-                                </div>
-                                <hr style="color: black;">
-                                <p class="mt-2 text-center text-white">High-quality motorcycles at reasonable prices,
-                                    plus excellent
-                                    customer service. Definitely planning to come back for my next purchase!</p>
-                                <p class="text-center">
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-regular fa-star-half-stroke mt-0 fs-5 star"></i>
+                        <div class="col-12 col-sm-6 col-md-8 col-lg-6 mb-3">
+                            <div class="card" style="background-color: #393E46;">
+                                <div class="container">
+                                    <div class="mt-2">
+                                        <i class="fa-solid fa-user text-white"></i>
+                                        <small class="text-grey" style="color: grey;">Vardaan</small>
+                                    </div>
+                                    <hr style="color: black;">
+                                    <p class="mt-2 text-center text-white">High-quality motorcycles at reasonable
+                                        prices,
+                                        plus excellent
+                                        customer service. Definitely planning to come back for my next purchase!</p>
+                                    <p class="text-center">
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-regular fa-star-half-stroke mt-0 fs-5 star"></i>
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-8 col-lg-6 mb-3">
-                        <div class="card" style="background-color: #393E46;">
-                            <div class="container">
-                                <div class="mt-2">
-                                    <i class="fa-solid fa-user text-white"></i>
-                                    <small class="text-grey" style="color: grey;">Vardaan</small>
-                                </div>
-                                <hr style="color: black;">
-                                <p class="mt-2 text-center text-white mb-2">High-quality motorcycles at reasonable
-                                    prices, plus excellent
-                                    customer service. Definitely planning to come back for my next purchase!</p>
-                                <p class="text-center">
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-solid fa-star mt-0 fs-5 star"></i>
-                                    <i class="fa-regular fa-star-half-stroke mt-0 fs-5 star"></i>
-                                    <i class="fa-duotone fa-light fa-star mt-0 fs-5 star"></i>
+                        <div class="col-12 col-sm-6 col-md-8 col-lg-6 mb-3">
+                            <div class="card" style="background-color: #393E46;">
+                                <div class="container">
+                                    <div class="mt-2">
+                                        <i class="fa-solid fa-user text-white"></i>
+                                        <small class="text-grey" style="color: grey;">Vardaan</small>
+                                    </div>
+                                    <hr style="color: black;">
+                                    <p class="mt-2 text-center text-white mb-2">High-quality motorcycles at reasonable
+                                        prices, plus excellent
+                                        customer service. Definitely planning to come back for my next purchase!</p>
+                                    <p class="text-center">
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-solid fa-star mt-0 fs-5 star"></i>
+                                        <i class="fa-regular fa-star-half-stroke mt-0 fs-5 star"></i>
+                                        <i class="fa-duotone fa-light fa-star mt-0 fs-5 star"></i>
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
 
@@ -303,6 +334,8 @@
     </footer>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="../aos.js"></script>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../js/product.js"></script>
 </body>
 
 </html>

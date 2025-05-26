@@ -1,6 +1,6 @@
 $(document).ready(function(){
     count();
-    $('.addToCart').click(function(){
+    $('.addtocart').click(function(){
         // alert("OK");
         let id = $(this).data('id');
         let name = $(this).data('name');
@@ -68,28 +68,24 @@ $(document).ready(function(){
                 let name = v.name;
                 let price = v.price;
                 let qty = v.qty;
+                
 
                 data += `<tr>
-                            <td>${no++}</td>
                             <td>${name}</td>
-                            <td>${price}</td>
+                            <td>
+                                
+                                ${price}
+                            </td>
                             <td>
                                 <button class="min" data-key="${i}"> - </button>
                                 ${qty}
                                 <button class="max" data-key="${i}"> + </button>
                             </td>
-                            <td>${price * qty}</td>
                         </tr>`;
 
                         total += price * qty;
-            })
+            });
 
-            data += `<tr>
-                        <td colspan="4" align="right">Total</td>
-                        <td>${total}</td>
-                    
-            
-                    </tr>`;
 
             $('tbody').html(data);
         }
