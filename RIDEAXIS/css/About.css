@@ -1,0 +1,61 @@
+.header-text{
+    padding: 50px 0 ;
+    font-size: 80px;
+    letter-spacing: 10px;
+}
+.about-text{
+    font-size: 30px;
+}
+.service-text{
+    color: rgb(73, 72, 72);
+    
+}
+main{
+    margin: 100px;
+}
+.customer-review-title{
+    border-bottom:2px solid #0022ff ;
+    width: 50%;
+}
+.quick-link{
+    text-decoration: none;
+    color: white;
+}
+.quick-link-container{
+    display: grid;
+    justify-content: center;
+}
+.quick-link:hover{
+    color: #0022ff;
+    text-decoration: underline;
+}
+
+.fa-telegram,.fa-instagram,.fa-youtube,.fa-facebook,.fa-x-twitter{
+    margin: 17px 5px 35px 5px;
+    font-size: 28px;
+    color: white;
+}
+.fa-telegram:hover,.fa-instagram:hover,.fa-youtube:hover,.fa-facebook:hover,.fa-x-twitter:hover{
+    color: #0022ff;
+
+}
+.footer{
+    margin-top: 150px;
+}
+.footer-line {
+    border: 0.2px solid white;
+    margin: 50px 0px 0 0px;
+
+}
+.footer-a-tag{
+    text-decoration: none;
+    color: white;
+}
+@font-face {
+    font-family: mainfont;
+    src: url(../Anton-Regular.ttf);
+}
+
+.font{
+    font-family: mainfont;
+}

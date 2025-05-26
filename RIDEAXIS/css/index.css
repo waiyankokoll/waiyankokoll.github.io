@@ -1,0 +1,106 @@
+.carousel-text{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right,#0022ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-carousel{
+    margin-top:110px;
+
+
+}
+.hero-buttom{
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+.hero-model-name{
+    color: #0022ff;
+
+}
+.badge{
+    background-color: #0022ff;
+}
+.latest-buy-btn{
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    border: 8px solid black;
+}
+.review-side-text{
+    /* background-color: #393E46; */
+    border-radius:10px ;
+    line-height: 50px;
+}
+.customer-review-title{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.customer-review-sec{
+    margin-top: 30px;
+}
+.star{
+    color: #ffbc02;
+}
+.star-empty{
+    color: white;
+}
+.service{
+    font-size: 120px;
+    /* color: rgb(73, 72, 72); */
+}
+.service-text{
+    color: rgb(73, 72, 72);
+    
+}
+.service-container{
+    margin-top: 120px;
+}
+
+.divided{
+    width: 50px;
+    border: 2px solid red;
+    display: flex;
+}
+.quick-link{
+    text-decoration: none;
+    color: white;
+}
+.quick-link-container{
+    display: grid;
+    justify-content: center;
+}
+.quick-link:hover{
+    color: #0022ff;
+    text-decoration: underline;
+}
+
+.fa-telegram,.fa-instagram,.fa-youtube,.fa-facebook,.fa-x-twitter{
+    margin: 17px 5px 35px 5px;
+    font-size: 28px;
+    color: white;
+}
+.fa-telegram:hover,.fa-instagram:hover,.fa-youtube:hover,.fa-facebook:hover,.fa-x-twitter:hover{
+    color: #0022ff;
+
+}
+.footer{
+    margin-top: 150px;
+}
+.footer-line {
+    border: 0.2px solid white;
+    margin: 50px 0px 0 0px;
+
+}
+.footer-a-tag{
+    text-decoration: none;
+    color: white;
+}
+@font-face {
+    font-family: mainfont;
+    src: url(../Anton-Regular.ttf);
+}
+
+.font{
+    font-family: mainfont;
+}

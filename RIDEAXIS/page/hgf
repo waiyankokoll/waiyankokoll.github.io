@@ -1,0 +1,30 @@
+<div class="col-4 col-sm-4 col-md-4 col-lg-4 card text-center m-auto mt-2">
+    <div class="ms-auto">
+        <i class="fa-solid fa-location-dot fs-5 my-3"></i>
+        <p class="fw-bold">Address</p>
+        <p class="fw-bold">
+            5165 E Pleasant Valley
+            Boulevard Tyrone, PA 16686
+        </p>
+    </div>
+</div>
+
+<div class="col-4 col-sm-4 col-md-4 col-lg-4 card text-center m-auto mt-2">
+    <div class="ms-auto">
+        <i class="fa-solid fa-phone fs-5 my-3"></i>
+        <p class="fw-bold">Phone</p>
+        <p class="fw-bold">
+            09 954219735 , 09 531762418
+        </p>
+    </div>
+</div>
+
+<div class="col-4 col-sm-4 col-md-4 col-lg-4 card text-center m-auto mt-2">
+    <div class="">
+        <i class="fa-solid fa-envelope fs-5 my-3"></i>
+        <p class="fw-bold">Email</p>
+        <p class="fw-bold">
+            admin@gmail.com
+        </p>
+    </div>
+</div>
