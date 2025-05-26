@@ -60,14 +60,16 @@ $(document).ready(function(){
         let itemstring = localStorage.getItem('shops');
         if(itemstring){
             let itemArray = JSON.parse(itemstring);
-
+            let datatwo = '';
             let data = '';
             let no = 1;
             let total = 0;
+            // let footer = document.getElementById('.offcanvas-foote')
             $.each(itemArray,function(i,v){
                 let name = v.name;
                 let price = v.price;
                 let qty = v.qty;
+            
                 
 
                 data += `<tr>
@@ -81,13 +83,23 @@ $(document).ready(function(){
                                 ${qty}
                                 <button class="max" data-key="${i}"> + </button>
                             </td>
-                        </tr>`;
-
+                        </tr>
+                        
+                        
+                        `;
                         total += price * qty;
+
+                        
             });
+            datatwo += `<p class=" float-end mt-2">Total = ${total}</p> <button class="btn btn-outline-primary  float-end"> Check Out </button>
+            
+            `
+
+           
 
 
             $('tbody').html(data);
+            $('.offcanvas-footer').html(datatwo);
         }
     }
 

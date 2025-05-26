@@ -54,30 +54,39 @@
                                 class="fa-solid fa-user"></i></a>
                     </li>
                     <li class="nav-item"><i class="fa-solid fa-cart-shopping nav-link me-3 fw-bold mt-1"
-                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-                            aria-controls="offcanvasScrolling"></i>
-                    </li>
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
+                id="item-count" class="ms-1">()</span></i>
+          </li>
 
                 </ul>
             </div>
         </div>
 
     </nav>
-    <div class="offcanvas offcanvas-end bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-        <div class="offcanvas-header bg-white">
-            <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
-            <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            
-        </div>
-        <div class="offcanvas-footer">
-            
-        </div>
+    <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header bg-white">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
+      <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <table border="1" cellpadding="25" cellspacing="0">
+        <thead>
+          <tr>
+
+          </tr>
+        </thead>
+        
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+    <div class="offcanvas-footer">
 
     </div>
 
+  </div>
 
     <div class="d-flex justify-content-center align-items-center vh-100 bg-img">
         <div class="col-md-4 login-card">
