@@ -13,6 +13,21 @@
     html {
       scroll-behavior: smooth;
     }
+      .notification-dot {
+      position: relative;
+      top: -5px;
+      right: 6px;
+      width: 14px;
+      height: 14px;
+      background-color: red;
+      border-radius: 50%;
+      /* border: 2px solid white; */
+      padding: 3px;
+      font-size: 15px;
+    }
+    .notification-dot:hover{
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -33,7 +48,7 @@
           <li class="nav-item"><a href="page/login.html" class="nav-link me-3 fw-bold"><i class="fa-solid fa-user"></i></a></li>
           <li class="nav-item"><i class="fa-solid fa-cart-shopping nav-link me-3 fw-bold mt-1"
               data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
-                id="item-count" class="ms-1">()</span></i>
+                id="item-count" class="ms-1 notification-dot text-white ">0</span></i>
           </li>
         </ul>
       </div>
@@ -45,20 +60,28 @@
       <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
       <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <table border="1" cellpadding="25" cellspacing="0">
+    <div class="offcanvas-body bg-light">
+      <table border="" cellpadding="25" cellspacing="0">
         <thead>
           <tr>
-
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
           </tr>
         </thead>
-        
+
         <tbody>
-          
+
         </tbody>
       </table>
     </div>
     <div class="offcanvas-footer">
+      <div class="container">
+        <div class="alltotal">
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -84,7 +107,7 @@
                 touring comfort, making it perfect for riders who want a versatile motorcycle for both aggressive rides
                 and long-distance cruising. With Ducati’s signature Italian styling and modern technology, it delivers a
                 refined yet thrilling experience.</p>
-              <a href="" class="btn mb-5 btn btn-outline-primary">Buy Now</a>
+              <a href="page/Product.html" class="btn mb-5 btn btn-outline-primary">Shop Now</a>
 
             </div>
             <!-- Right side image -->
@@ -101,11 +124,11 @@
           <div class="row align-items-center">
             <!-- Left side text -->
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear">
-              <h2 class="text-white mb-3 font"> <i>Bicycle</i></h2>
+              <h2 class="text-white mb-3 font"> <i>Folding electric bike</i></h2>
               <p class="text-white carousel-text mb-5 me-5" data-aos="zoom-in-up" data-aos-delay="200">the Bycicle blends sport performance with touring comfort, making it perfect for riders who want a
                 versatile motorcycle for both aggressive rides and long-distance cruising. With Ducati’s signature
                 Italian styling and modern technology, it delivers a refined yet thrilling experience.</p>
-              <a href="" class="btn mb-5 btn btn-outline-primary">Buy Now</a>
+              <a href="page/Product.html" class="btn mb-5 btn btn-outline-primary">Shop Now</a>
 
             </div>
             <!-- Right side image -->
@@ -121,12 +144,12 @@
           <div class="row align-items-center">
             <!-- Left side text -->
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-easing="linear">
-              <h2 class="text-white mb-3 font hero-model-name "><i>Ducati SuperSport 950</i></h2>
+              <h2 class="text-white mb-3 font hero-model-name "><i>Fat tire mountain bike </i></h2>
               <p class="text-white carousel-text mb-5 me-5 ">The Bycicle blends sport performance with
                 touring comfort, making it perfect for riders who want a versatile motorcycle for both aggressive rides
                 and long-distance cruising. With Ducati’s signature Italian styling and modern technology, it delivers a
                 refined yet thrilling experience.</p>
-              <a href="" class="btn mb-5 btn btn-outline-primary">Buy Now</a>
+              <a href="page/Product.html" class="btn mb-5 btn btn-outline-primary">Shop Now</a>
 
             </div>
             <!-- Right side image -->
@@ -152,7 +175,7 @@
               <div class="col-6 col-sm-6 col-md-6">
                 <div class="">
                   <p class="badge rounded-pill  px-4 py-2 fs-7 mb-1 text-white">Motor Bikes</p>
-                  <h4 class="mb-4 text-white">Honda CB650R</h4>
+                  <h4 class="mb-4 text-white">Ducati SuperSport 950</h4>
                   <a href="page/Product.html" class="btn text-white">SHOP NOW</a>
                 </div>
 
@@ -175,9 +198,9 @@
             <div class="row gap-0 align-items-center ms-auto">
               <div class="col-6 col-sm-6 col-md-6">
                 <div class="">
-                  <p class="badge rounded-pill  px-4 py-2 fs-7 mb-1">Motor Bikes</p>
-                  <h4 class="mb-4 ">Honda CB650R</h4>
-                  <a href="page/Product.html" class="btn">SHOP NOW</a>
+                  <p class="badge rounded-pill  px-4 py-2 fs-7 mb-1 text-white">Motor Bikes</p>
+                  <h4 class="mb-4 text-white"></h4>
+                  <a href="page/Product.html" class="btn text-white">SHOP NOW</a>
                 </div>
 
               </div>
@@ -281,7 +304,7 @@
               </div>
               <div class="col-6 col-sm-6 col-md-6 p-0">
                 <div>
-                  <img src="IMAGE/Yamaha YZF-R.webp" alt="" class="img-fluid">
+                  <img src="IMAGE/Yamaha YZF-R.webp" alt="" class="img-fluid"  style="background-color: #ECECEC;border-radius: 5px;">
                 </div>
 
               </div>
@@ -306,7 +329,7 @@
               </div>
               <div class="col-6 col-sm-6 col-md-6 p-0">
                 <div>
-                  <img src="IMAGE/Yamaha YZF-R.webp" alt="" class="img-fluid">
+                  <img src="IMAGE/Yamaha YZF-R.webp" alt="" class="img-fluid"   style="background-color: #ECECEC;border-radius: 5px;">
                 </div>
 
               </div>
@@ -528,7 +551,7 @@
         <div>
           <p class="text-white mb-0">Subscribe to Our Newsletter</p>
           <input type="email" name="" id="" placeholder="Enter Your Email" class="float-end form-control">
-          <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+          <button type="submit" class="btn btn-secondary mt-2">Subscribe</button>
         </div>
       </div>
 

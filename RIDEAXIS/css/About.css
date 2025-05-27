@@ -3,6 +3,20 @@
     font-size: 80px;
     letter-spacing: 10px;
 }
+.text-line{
+    border: 3px solid white;
+    color: white;
+    width: 13%;
+}
+.star{
+    color: #ffbc02;
+}
+.star-empty{
+    color: white;
+}
+.maintwo{
+    margin-top: 80px;
+}
 .about-text{
     font-size: 30px;
 }
@@ -14,7 +28,7 @@ main{
     margin: 100px;
 }
 .customer-review-title{
-    border-bottom:2px solid #0022ff ;
+    border-bottom:2px solid gray ;
     width: 50%;
 }
 .quick-link{
@@ -26,7 +40,7 @@ main{
     justify-content: center;
 }
 .quick-link:hover{
-    color: #0022ff;
+    color: gray;
     text-decoration: underline;
 }
 
@@ -36,7 +50,7 @@ main{
     color: white;
 }
 .fa-telegram:hover,.fa-instagram:hover,.fa-youtube:hover,.fa-facebook:hover,.fa-x-twitter:hover{
-    color: #0022ff;
+    color: gray;
 
 }
 .footer{

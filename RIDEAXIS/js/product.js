@@ -60,6 +60,7 @@ $(document).ready(function(){
         let itemstring = localStorage.getItem('shops');
         if(itemstring){
             let itemArray = JSON.parse(itemstring);
+
             let datatwo = '';
             let data = '';
             let no = 1;
@@ -74,32 +75,27 @@ $(document).ready(function(){
 
                 data += `<tr>
                             <td>${name}</td>
+                            <td>${price}</td>
                             <td>
-                                
-                                ${price}
-                            </td>
-                            <td>
-                                <button class="min" data-key="${i}"> - </button>
+                                <button class="min" data-key="${i}" style="border-radius: 8px; background-color: white;"><i class="fa-solid fa-minus"></i></button>
                                 ${qty}
-                                <button class="max" data-key="${i}"> + </button>
+                                <button class="max" data-key="${i}" style="border-radius: 8px; background-color: white;"><i class="fa-solid fa-plus"></i></button>
                             </td>
-                        </tr>
-                        
-                        
-                        `;
-                        total += price * qty;
+                        </tr>`;
 
-                        
+                        total += price * qty;
             });
-            datatwo += `<p class=" float-end mt-2">Total = ${total}</p> <button class="btn btn-outline-primary  float-end"> Check Out </button>
+                datatwo += `<p class=" float-end mt-2 ms-2">Total = $${total}</p> <button class="btn btn-outline-primary  float-end"> Check Out </button>`;
+
             
-            `
+            
+
 
            
 
-
             $('tbody').html(data);
-            $('.offcanvas-footer').html(datatwo);
+            $('.alltotal').html(datatwo);
+
         }
     }
 
@@ -132,7 +128,7 @@ $(document).ready(function(){
     })
     $('tbody').on('click','.max',function(){
         let key = $(this).data('key');
-        alert("sksdjkjdf");
+        // alert("sksdjkjdf");
         let itemstring = localStorage.getItem('shops');
         if(itemstring){
             let itemArray = JSON.parse(itemstring);

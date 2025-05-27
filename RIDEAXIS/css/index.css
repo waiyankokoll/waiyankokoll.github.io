@@ -71,7 +71,7 @@
     justify-content: center;
 }
 .quick-link:hover{
-    color: #0022ff;
+    color: gray;
     text-decoration: underline;
 }
 
@@ -81,7 +81,7 @@
     color: white;
 }
 .fa-telegram:hover,.fa-instagram:hover,.fa-youtube:hover,.fa-facebook:hover,.fa-x-twitter:hover{
-    color: #0022ff;
+    color: gray;
 
 }
 .footer{

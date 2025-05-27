@@ -7,12 +7,27 @@
     <title>RIDEAXIS</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
-    <link rel="stylesheet" href="../css/About.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../aoscss.css">
     <style>
         html {
             scroll-behavior: smooth;
         }
+        .notification-dot {
+      position: relative;
+      top: -5px;
+      right: 6px;
+      width: 14px;
+      height: 14px;
+      background-color: red;
+      border-radius: 50%;
+      /* border: 2px solid white; */
+      padding: 3px;
+      font-size: 15px;
+    }
+    .notification-dot:hover{
+      cursor: pointer;
+    }
     </style>
 </head>
 
@@ -35,51 +50,59 @@
                     </li>
                     <li class="nav-item"><i class="fa-solid fa-cart-shopping nav-link me-3 fw-bold mt-1"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-                            aria-controls="offcanvasScrolling"><span id="item-count" class="ms-1">()</span></i>
+                            aria-controls="offcanvasScrolling"><span id="item-count" class="ms-1 notification-dot text-white ">0</span></i>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+   <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header bg-white">
       <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
       <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <table border="1" cellpadding="25" cellspacing="0">
+    <div class="offcanvas-body bg-light">
+      <table border="" cellpadding="25" cellspacing="0">
         <thead>
           <tr>
-
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
           </tr>
         </thead>
-        
+
         <tbody>
-          
+
         </tbody>
       </table>
     </div>
     <div class="offcanvas-footer">
+      <div class="container">
+        <div class="alltotal">
+
+        </div>
+
+      </div>
 
     </div>
 
   </div>
-    <header style="background-color: #393E46;" class="container-fluid ">
+    <header  class="container-fluid bg-dark" >
         <h1 class="header-text text-center text-white fw-bold font">Contact</h1>
     </header>
     <main>
         <div class="container">
             <h3 class="text-white text-center">Contact Us</h3>
-            <p class="text-white text-center">Have any questions or need assistance? We`re here to help</p>
+            <p class="text-white text-center mb-5">Have any questions or need assistance? We`re here to help</p>
             <div class="row mb-5">
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 card text-center m-auto mt-2">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center m-auto mt-2 bg-dark" style="border: 1px solid #393E46;border-radius: 10px;">
                         <div class="ms-auto">
-                            <i class="fa-solid fa-location-dot fs-5 my-3"></i>
-                            <p class="fw-bold">Address</p>
-                            <p class="fw-bold">
+                            <i class="fa-solid fa-location-dot fs-5 my-3 text-white"></i>
+                            <p class="fw-bold text-white">Address</p>
+                            <p class="fw-bold text-white">
                                 5165 E Pleasant Valley
                                 Boulevard
                             </p>
@@ -87,22 +110,22 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 card text-center m-auto mt-2">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 card text-center m-auto mt-2 bg-dark"style="border: 1px solid #393E46;border-radius: 10px;">
                         <div class="">
-                            <i class="fa-solid fa-phone fs-5 my-3"></i>
-                            <p class="fw-bold">Phone</p>
-                            <p class="fw-bold">
-                                09 954219735 , 09 531762418
+                            <i class="fa-solid fa-phone fs-5 my-3  text-white"></i>
+                            <p class="fw-bold text-white">Phone</p>
+                            <p class="fw-bold text-white">
+                                 09 954219735  <br>   09 531762418
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 card text-center m-auto mt-2">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 card text-center m-auto mt-2 bg-dark" style="border: 1px solid #393E46;border-radius: 10px;">
                         <div class="">
-                            <i class="fa-solid fa-envelope fs-5 my-3"></i>
-                            <p class="fw-bold">Email</p>
-                            <p class="fw-bold">
+                            <i class="fa-solid fa-envelope fs-5 my-3 text-white"></i>
+                            <p class="fw-bold text-white">Email</p>
+                            <p class="fw-bold text-white">
                                 admin@gmail.com
                                 admin244@gmail.com
                             </p>
@@ -115,7 +138,7 @@
 
             </div>
             <div class="mt-5">
-                <div class="row send-box mt-5">
+                <div class="row send-box ">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 m-auto">
                         <div class="">
                             <div class="card">
@@ -128,7 +151,7 @@
                                         <input type="email" name="name" id="name" class="form-control">
                                         <Label for="name" class="form-label">Message</Label>
                                         <input type="text" name="name" id="name" class="form-control mb-2">
-                                        <button type="submit" class="btn btn-outline-primary mb-3">Send</button>
+                                        <button type="submit" class="btn btn-outline-secondary mb-3">Send</button>
                                     </form>
 
                                 </div>
@@ -196,7 +219,7 @@
                 <div>
                     <p class="text-white mb-0">Subscribe to Our Newsletter</p>
                     <input type="email" name="" id="" placeholder="Enter Your Email" class="float-end form-control">
-                    <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                    <button type="submit" class="btn btn-secondary mt-2">Subscribe</button>
                 </div>
             </div>
 

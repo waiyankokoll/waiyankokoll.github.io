@@ -34,6 +34,21 @@
         .form-control::placeholder {
             color: #ccc;
         }
+        .notification-dot {
+      position: relative;
+      top: -5px;
+      right: 6px;
+      width: 14px;
+      height: 14px;
+      background-color: red;
+      border-radius: 50%;
+      /* border: 2px solid white; */
+      padding: 3px;
+      font-size: 15px;
+    }
+    .notification-dot:hover{
+      cursor: pointer;
+    }
     </style>
 </head>
 
@@ -53,7 +68,7 @@
                     <li class="nav-item"><a href="login.html" class="nav-link me-3 fw-bold "><i class="fa-solid fa-user"></i></a>
                     <li class="nav-item"><i class="fa-solid fa-cart-shopping nav-link me-3 fw-bold mt-1"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-                            aria-controls="offcanvasScrolling"><span id="item-count" class="ms-1">()</span></i>
+                            aria-controls="offcanvasScrolling"><span id="item-count" class="ms-1 notification-dot text-white ">0</span></i>
                     </li>
                 </ul>
             </div>
@@ -65,45 +80,52 @@
       <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
       <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <table border="1" cellpadding="25" cellspacing="0">
+    <div class="offcanvas-body bg-light">
+      <table border="" cellpadding="25" cellspacing="0">
         <thead>
           <tr>
-
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
           </tr>
         </thead>
-        
+
         <tbody>
-          
+
         </tbody>
       </table>
     </div>
     <div class="offcanvas-footer">
+      <div class="container">
+        <div class="alltotal">
+
+        </div>
+
+      </div>
 
     </div>
 
   </div>
 
-
     <div class="d-flex justify-content-center align-items-center vh-100 bg-img">
         <div class="col-md-4 login-card">
             <h2 class="text-center mb-4"> Login</h2>
-            <form>
+            <form class="loginForm">
                 <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                    <label for="loginUsername" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="loginUsername" placeholder="Enter your username" required>
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    <label for="loginPassword" class="form-label" id="loginPassword">Password</label>
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-danger">Login</button>
+                    <button type="submit" class="btn btn-outline-primary">Login</button>
                 </div>
                 <p class="text-center mt-3"><a href="#" class="text-light text-decoration-underline">Forgot
                         Password?</a></p>
                 <p class="text-center">Do you not have an account ? <a href="signup.html"
-                        class="text-decoration-none">sign up</a></p>
+                        class="text-decoration-none ">sign up</a></p>
             </form>
         </div>
     </div>
@@ -158,7 +180,7 @@
                 <div>
                     <p class="text-white mb-0">Subscribe to Our Newsletter</p>
                     <input type="email" name="" id="" placeholder="Enter Your Email" class="float-end form-control">
-                    <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                    <button type="submit" class="btn btn-secondary mt-2">Subscribe</button>
                 </div>
             </div>
 
@@ -175,6 +197,7 @@
     <script src="aos.js"></script>
     <script src="../jquery-3.7.1.min.js"></script>
     <script src="../js/product.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>

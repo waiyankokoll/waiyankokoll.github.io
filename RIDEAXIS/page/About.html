@@ -13,6 +13,21 @@
         html {
             scroll-behavior: smooth;
         }
+        .notification-dot {
+      position: relative;
+      top: -5px;
+      right: 6px;
+      width: 14px;
+      height: 14px;
+      background-color: red;
+      border-radius: 50%;
+      /* border: 2px solid white; */
+      padding: 3px;
+      font-size: 15px;
+    }
+    .notification-dot:hover{
+      cursor: pointer;
+    }
     </style>
 </head>
 
@@ -35,32 +50,40 @@
                     </li>
                     <li class="nav-item"><i class="fa-solid fa-cart-shopping nav-link me-3 fw-bold mt-1"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-                            aria-controls="offcanvasScrolling"><span id="item-count" class="ms-1">()</span></i>
+                            aria-controls="offcanvasScrolling"><span id="item-count" class="ms-1 notification-dot text-white ">0</span></i>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+   <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header bg-white">
       <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
       <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <table border="1" cellpadding="25" cellspacing="0">
+    <div class="offcanvas-body bg-light">
+      <table border="" cellpadding="25" cellspacing="0">
         <thead>
           <tr>
-
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
           </tr>
         </thead>
-        
+
         <tbody>
 
         </tbody>
       </table>
     </div>
     <div class="offcanvas-footer">
+      <div class="container">
+        <div class="alltotal">
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -70,14 +93,11 @@
     </header>
     <main>
         <div class="container">
-            <div class="card">
-                <div class="container">
-                    <div class="card-header">
-                        <h4 class="fw-bold">Our About</h4>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-8 m-auto ">
-                            <p class="fs-5 fw-bold">
+            <h3 class="text-white mb-0">Our About</h3>
+            <hr class="mb-0 text-line">
+            <div class="row mt-0">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-8 m-auto">
+                            <p class="fs-5 fw-bold text-white">
                                 RIDEAXIS Store is a trusted and reliable motorcycle shop in USA, dedicated to providing
                                 high-quality motorcycle parts, professional maintenance services, and a wide range of
                                 importedmotorbikes.We aim to deliver the best experience for all our customers by
@@ -91,12 +111,8 @@
                             <img src="../IMAGE/Kawasaki_Ninja_1000-removebg-preview.png" alt="" class="img-fluid">
                         </div>
                     </div>
-
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="row maintwo">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
                     <div class="card mt-4">
                         <div class="container">
                             <div class="card-header">
@@ -319,7 +335,7 @@
                 <div>
                     <p class="text-white mb-0">Subscribe to Our Newsletter</p>
                     <input type="email" name="" id="" placeholder="Enter Your Email" class="float-end form-control">
-                    <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                    <button type="submit" class="btn btn-secondary mt-2">Subscribe</button>
                 </div>
             </div>
 

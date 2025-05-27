@@ -13,6 +13,21 @@
     html {
       scroll-behavior: smooth;
     }
+    .notification-dot {
+      position: relative;
+      top: -5px;
+      right: 6px;
+      width: 14px;
+      height: 14px;
+      background-color: red;
+      border-radius: 50%;
+      /* border: 2px solid white; */
+      padding: 3px;
+      font-size: 15px;
+    }
+    .notification-dot:hover{
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -33,9 +48,9 @@
           </li>
           <li class="nav-item"><i class="fa-solid fa-cart-shopping nav-link me-3 fw-bold mt-1"
               data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
-                id="item-count" class="ms-1">()</span></i>
+                id="item-count" class="ms-1 notification-dot text-white ">0</span></i>
           </li>
-          
+
         </ul>
       </div>
     </div>
@@ -46,20 +61,28 @@
       <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
       <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <table border="1" cellpadding="25" cellspacing="0">
+    <div class="offcanvas-body bg-light">
+      <table border="" cellpadding="25" cellspacing="0">
         <thead>
           <tr>
-
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
           </tr>
         </thead>
-        
+
         <tbody>
 
         </tbody>
       </table>
     </div>
     <div class="offcanvas-footer">
+      <div class="container">
+        <div class="alltotal">
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -75,7 +98,7 @@
             <div class="container">
               <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
+                <button class="btn btn-outline-dark" type="submit">Search</button>
               </form>
               <h5 class="mt-4 mb-3">Product Categories</h5>
               <div class="row">
@@ -145,7 +168,7 @@
                   <span class="text-decoration-line-through">$500,000.00</span>
                   <span style="color: blue;">$450,000.00</span>
                   <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4 addtocart"
-                      data-id="1" data-name="Bike1" data-price="1500000"></i></span>
+                      data-id="1" data-name="Yamaha YZF-R" data-price="1500000"></i></span>
 
                 </div>
               </div>
@@ -157,15 +180,15 @@
             <div class="container">
               <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                  <img src="../IMAGE/Yamaha YZF-R.webp" alt="" class="img-fluid my-2 product-img">
+                  <img src="../IMAGE/photo_2025-05-27_19-11-55-removebg-preview.png" alt="" class="img-fluid my-2 product-img">
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 col-lg-8 product-title m-auto">
-                  <p class="mb-1">Yamaha</p>
-                  <h3 class="mb-3">Yamaha YZF-R</h3>
+                  <p class="mb-1">Honda</p>
+                  <h3 class="mb-3">Honda CB650R</h3>
                   <span class="text-decoration-line-through">$500,000.00</span>
                   <span style="color: blue;">$450,000.00</span>
                   <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4 addtocart"
-                      data-id="2" data-name="Bike2" data-price="45000000"></i></span>
+                      data-id="2" data-name="Honda CB650R" data-price="45000000"></i></span>
 
                 </div>
               </div>
@@ -177,35 +200,15 @@
             <div class="container">
               <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                  <img src="../IMAGE/Yamaha YZF-R.webp" alt="" class="img-fluid my-2 product-img">
+                  <img src="../IMAGE/photo_2025-05-27_19-08-38-removebg-preview.png" alt="" class="img-fluid my-2 product-img">
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 col-lg-8 product-title m-auto">
                   <p class="mb-1">Yamaha</p>
-                  <h3 class="mb-3">Yamaha YZF-R</h3>
+                  <h3 class="mb-3">Yamaha YZF-R6</h3>
                   <span class="text-decoration-line-through">$500,000.00</span>
                   <span style="color: blue;">$450,000.00</span>
                   <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4 addtocart"
-                      data-id="3" data-name="Bike3" data-price="45000000"></i></span>
-
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-                    <div class="card mt-4">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                  <img src="../IMAGE/Yamaha YZF-R.webp" alt="" class="img-fluid my-2 product-img">
-                </div>
-                <div class="col-12 col-sm-6 col-md-8 col-lg-8 product-title m-auto">
-                  <p class="mb-1">Yamaha</p>
-                  <h3 class="mb-3">Yamaha YZF-R</h3>
-                  <span class="text-decoration-line-through">$500,000.00</span>
-                  <span style="color: blue;">$450,000.00</span>
-                  <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4 addtocart"
-                      data-id="4" data-name="Bike4" data-price="45000000"></i></span>
+                      data-id="3" data-name="Yamaha YZF-R6" data-price="45000000"></i></span>
 
                 </div>
               </div>
@@ -217,15 +220,35 @@
             <div class="container">
               <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                  <img src="../IMAGE/Yamaha YZF-R.webp" alt="" class="img-fluid my-2 product-img">
+                  <img src="../IMAGE/photo_2025-05-27_19-20-20-removebg-preview (1).png" alt="" class="img-fluid my-2 product-img">
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 col-lg-8 product-title m-auto">
                   <p class="mb-1">Yamaha</p>
-                  <h3 class="mb-3">Yamaha YZF-R</h3>
+                  <h3 class="mb-3">Yamaha YZF-R1</h3>
                   <span class="text-decoration-line-through">$500,000.00</span>
                   <span style="color: blue;">$450,000.00</span>
                   <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4 addtocart"
-                      data-id="5" data-name="Bike5" data-price="45000000"></i></span>
+                      data-id="4" data-name="Yamaha YZF-R1" data-price="45000000"></i></span>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card mt-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                  <img src="../IMAGE/photo_2025-05-27_19-16-57-removebg-preview.png" alt="" class="img-fluid my-2 product-img">
+                </div>
+                <div class="col-12 col-sm-6 col-md-8 col-lg-8 product-title m-auto">
+                  <p class="mb-1">Honda</p>
+                  <h3 class="mb-3">Honda CB6R</h3>
+                  <span class="text-decoration-line-through">$500,000.00</span>
+                  <span style="color: blue;">$450,000.00</span>
+                  <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4 addtocart"
+                      data-id="5" data-name="Honda CB6R" data-price="45000000"></i></span>
 
                 </div>
               </div>
@@ -238,15 +261,55 @@
             <div class="container">
               <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                  <img src="../IMAGE/Yamaha YZF-R.webp" alt="" class="img-fluid my-2 product-img">
+                  <img src="../IMAGE/photo_2025-05-27_19-29-02-removebg-preview.png" alt="" class="img-fluid my-2 product-img">
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 col-lg-8 product-title m-auto">
-                  <p class="mb-1">Yamaha</p>
-                  <h3 class="mb-3">Yamaha YZF-R</h3>
+                  <p class="mb-1">Honda</p>
+                  <h3 class="mb-3">Honda CD 110</h3>
                   <span class="text-decoration-line-through">$500,000.00</span>
                   <span style="color: blue;">$450,000.00</span>
                   <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4 addtocart"
-                      data-id="6" data-name="Bike4" data-price="45000000"></i></span>
+                      data-id="6" data-name="Honda CD 110" data-price="45000000"></i></span>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card mt-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                  <img src="../IMAGE/photo_2025-05-27_20-35-53-removebg-preview.png" alt="" class="img-fluid my-2 product-img">
+                </div>
+                <div class="col-12 col-sm-6 col-md-8 col-lg-8 product-title m-auto">
+                  <p class="mb-1">Bicycle</p>
+                  <h3 class="mb-3">Fat tire mountain bike</h3>
+                  <span class="text-decoration-line-through">$500,000.00</span>
+                  <span style="color: blue;">$450,000.00</span>
+                  <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4 addtocart"
+                      data-id="6" data-name="Fat tire mountain bike" data-price="45000000"></i></span>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card mt-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                  <img src="../IMAGE/photo_2025-05-27_20-35-51-removebg-preview.png" alt="" class="img-fluid my-2 product-img">
+                </div>
+                <div class="col-12 col-sm-6 col-md-8 col-lg-8 product-title m-auto">
+                  <p class="mb-1">Bicycle</p>
+                  <h3 class="mb-3">Folding electric bike</h3>
+                  <span class="text-decoration-line-through">$500,000.00</span>
+                  <span style="color: blue;">$450,000.00</span>
+                  <span><i class="fa-solid fa-cart-shopping float-end btn btn-outline-primary px-4 addtocart"
+                      data-id="11" data-name="Folding electric bike" data-price="45000000"></i></span>
 
                 </div>
               </div>
@@ -324,7 +387,7 @@
         <div>
           <p class="text-white mb-0">Subscribe to Our Newsletter</p>
           <input type="email" name="" id="" placeholder="Enter Your Email" class="float-end form-control">
-          <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+          <button type="submit" class="btn btn-secondary mt-2">Subscribe</button>
         </div>
       </div>
 
