@@ -78,7 +78,7 @@ $(document).ready(function(){
                             <td>${price}</td>
                             <td>
                                 <button class="min" data-key="${i}" style="border-radius: 8px; background-color: white;"><i class="fa-solid fa-minus"></i></button>
-                                ${qty}
+                                <h6 class="fw-bold">${qty}</h6>
                                 <button class="max" data-key="${i}" style="border-radius: 8px; background-color: white;"><i class="fa-solid fa-plus"></i></button>
                             </td>
                         </tr>`;

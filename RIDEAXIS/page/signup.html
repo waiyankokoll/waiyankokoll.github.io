@@ -14,13 +14,13 @@
             scroll-behavior: smooth;
         }
 
-        .bg-img {
+        main {
             background: url('../IMAGE/black-motorcycle-parked-on-country-road-at-sunset-photo.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
 
-            height: 100vh;
+            /* height: 100vh; */
         }
 
         .login-card {
@@ -34,21 +34,23 @@
         .form-control::placeholder {
             color: #ccc;
         }
+
         .notification-dot {
-      position: relative;
-      top: -5px;
-      right: 6px;
-      width: 14px;
-      height: 14px;
-      background-color: red;
-      border-radius: 50%;
-      /* border: 2px solid white; */
-      padding: 3px;
-      font-size: 15px;
-    }
-    .notification-dot:hover{
-      cursor: pointer;
-    }
+            position: relative;
+            top: -5px;
+            right: 6px;
+            width: 14px;
+            height: 14px;
+            background-color: red;
+            border-radius: 50%;
+            /* border: 2px solid white; */
+            padding: 3px;
+            font-size: 15px;
+        }
+
+        .notification-dot:hover {
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -69,80 +71,86 @@
                                 class="fa-solid fa-user"></i></a>
                     </li>
                     <li class="nav-item"><i class="fa-solid fa-cart-shopping nav-link me-3 fw-bold mt-1"
-              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
-                id="item-count" class="ms-1 notification-dot text-white ">0</span></i>
-          </li>
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                            aria-controls="offcanvasScrolling"><span id="item-count"
+                                class="ms-1 notification-dot text-white ">0</span></i>
+                    </li>
 
                 </ul>
             </div>
         </div>
 
     </nav>
-   <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-    <div class="offcanvas-header bg-white">
-      <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
-      <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body bg-light">
-      <table border="" cellpadding="25" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Item</th>
-            <th>Price</th>
-            <th>Qty</th>
-          </tr>
-        </thead>
+    <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header bg-white">
+            <h5 class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Shopping cart</h5>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-light">
+            <table border="" cellpadding="25" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                    </tr>
+                </thead>
 
-        <tbody>
+                <tbody>
 
-        </tbody>
-      </table>
-    </div>
-    <div class="offcanvas-footer">
-      <div class="container">
-        <div class="alltotal">
+                </tbody>
+            </table>
+        </div>
+        <div class="offcanvas-footer">
+            <div class="container">
+                <div class="alltotal">
+
+                </div>
+
+            </div>
 
         </div>
 
-      </div>
-
     </div>
+    <main>
+        <div class="d-flex justify-content-center align-items-center bg-img">
+            <div class="col-md-4 login-card mt-5 mb-5">
+                <h2 class="text-center mb-4">Create Account</h2>
+                <form class="registerForm">
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">Fullname</label>
+                        <input type="text" class="form-control" id="fullname" placeholder="Enter your full name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerUsername" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="registerUsername" placeholder="Enter your username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="registerPassword"
+                            placeholder="Enter your password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="confirm password">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-outline-primary" id="signup">Sign up</button>
+                    </div>
 
-  </div>
-    <div class="d-flex justify-content-center align-items-center vh-100 bg-img">
-        <div class="col-md-4 login-card">
-            <h2 class="text-center mb-4">Create Account</h2>
-            <form class="registerForm">
-                <div class="mb-3">
-                    <label for="fullname" class="form-label">Fullname</label>
-                    <input type="text" class="form-control" id="fullname" placeholder="Enter your full name">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="email" placeholder="Enter your Email">
-                </div>
-                <div class="mb-3">
-                    <label for="registerUsername" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="registerUsername" placeholder="Enter your username">
-                </div>
-                <div class="mb-3">
-                    <label for="registerPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="registerPassword" placeholder="Enter your password">
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="confirm password">
-                </div>
-                <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-outline-primary">Sign up</button>
-                </div>
-
-                <p class="text-center">Already have an account? <a href="login.html" class="text-decoration-none">Login hear</a>
-                </p>
-            </form>
+                    <p class="text-center">Already have an account? <a href="login.html"
+                            class="text-decoration-none">Login
+                            hear</a>
+                    </p>
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
 
     <footer class="container-fluid footer bg-dark mb-0">
         <div class="row">
@@ -209,31 +217,11 @@
     </footer>
 
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="aos.js"></script>
+    <script src="../aos.js"></script>
     <script src="../jquery-3.7.1.min.js"></script>
     <script src="../js/product.js"></script>
-    <script>
-    document.getElementById('registerForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const username = document.getElementById('registerUsername').value;
-    const password = document.getElementById('registerPassword').value;
+    <script src="../js/signup.js"></script>
 
-    // existing users
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-
-    // check if username already exists
-    const userExists = users.some(user => user.username === username);
-    if (userExists) {
-      alert('Username already taken!');
-      return;
-    }
-
-    // add new user
-    users.push({ username, password });
-    localStorage.setItem('users', JSON.stringify(users));
-    alert('User registered successfully!');
-  });
-    </script>
 </body>
 
 </html>
